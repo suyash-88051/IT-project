@@ -1,0 +1,49 @@
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  h1 {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  body {
+    background-color: lightblue;
+  }
+  input[name="like"]{
+    font-size: 16px;
+    background: linear-gradient(#0095ff 5%, #7fc5ff 100%);
+    border: 1px solid #009ce5;
+    color: #4E4D4B;
+    font-weight: bold;
+    cursor: pointer;
+    width: 25%;
+    border-radius: 5px;
+    padding: 10px 0;
+    outline:none;
+    }
+    input[type=name="dislike"]:hover{
+    background: linear-gradient(#7fe3ff 5%, #00c8ff 100%);
+    }
+    input[name="dislike"]{
+        font-size: 16px;
+        background: linear-gradient(#00b7ff 5%, #7fcaff 100%);
+        border: 1px solid #00a0e5;
+        color: #4E4D4B;
+        font-weight: bold;
+        cursor: pointer;
+        width: 25%;
+        border-radius: 5px;
+        padding: 10px 0;
+        outline:none;
+        }
+        input[type=name="dislike"]:hover{
+        background: linear-gradient(#ff7f7f 5%, #ff0000 100%);
+        }
+    

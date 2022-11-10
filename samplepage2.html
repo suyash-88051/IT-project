@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample page</title>
+        <link rel="stylesheet" type="text/css" href="samplepage2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+
+
+        <img src="https://img.freepik.com/free-photo/writing-down-plan_1098-15897.jpg?w=2000">
+        <h1>
+            Varun Sharma
+        </h1>
+
+
+        <p>30 Years, 5' 11" , Hindu / Hindi-Delhi, Brahmin Gaur, Garga(Gotra),
+                         B.E/B.Tech, $150,001 - 200,000, Software Professional, Toronto</p>
+
+
+        <input type="button" name="like" id="like" value="Like"/>
+        <input type="button" name="dislike" id="dislike" value="Dislike"/>
+
+        <script>
+            var b1 = document.getElementById('like');
+            var b2 = document.getElementById('dislike');
+            var b = document.querySelector('body');
+
+            b1.addEventListener('click', function () {
+                change('green');
+
+            });
+
+            b2.addEventListener('click', function () {
+                change('red');
+            });
+
+            function change(c) {
+
+                b.style.background = c;
+
+            }
+        </script>
+
+    </body>
+
+
+</html>

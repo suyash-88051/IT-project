@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Javascript Login Form Validation</title>
+<link rel="stylesheet" href="login_form.css">
+<script src="js/login.js"></script>
+</head>
+<script>  
+    function validateform(){  
+    var name=document.myform.username.value;  
+    var password=document.myform.password.value; 
+      
+    if (name==null || name==""){  
+      alert("Name can't be blank");  
+      return false;  
+    }else if(password.length<6){  
+      alert("Password must be at least 6 characters long.");  
+      return false;  
+      } 
+      else{
+
+      } 
+    }  
+    </script> 
+<body>
+  <div class="logo">
+    <bg>
+      <img src="https://cdn.pixabay.com/photo/2017/08/06/20/11/wedding-2595862__340.jpg">
+      </bg>
+   </div>
+
+<div class="container">
+  <div class="main">
+<h2>login to matrimonial</h2>
+<form id="form_id" method="post" name="myform">
+<label>User Name :</label>
+<input type="text" name="username" id="username"/>
+<label>Password :</label>
+<input type="password" name="password" id="password"/>
+<a href="C:\Users\HP\OneDrive\Desktop\JAI\toc\samplepage2.html">
+<input type="button" name="submit" id ="submit" value="Login" onclick="validateform()"/></a>
+</form>
+
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>registration form</title>
+    <link rel="stylesheet" type="text/css" href="registration_form.css">
+</head>
+<script>
+    function validateform() {
+        var name = document.myform.fname.value;
+        var add = document.myform.address.value;
+
+        if (name == null || name == "") {
+            alert("Firstname can't be blank");
+            return false;
+        } else if (add == null || add == "") {
+            alert("Address can't be blank");
+            return false;
+        }
+    }
+</script>
+
+<body>
+    <div class="container">
+        <div class="logo">
+        </div>
+        <div class="main">
+            <h2>Create your wedlock profile</h2>
+            <form id="form_id" method="post" name="myform">
+                <label>your good name:</label>
+                <input type="text" name="fname" id="fname" />
+                <label>Age</label>
+                <input type="text" name="Lname" id="Lname" />
+                <label>Gender</label>
+                <br>
+                <label>Female</label>
+                <input type="radio" name="gender" value="F" />
+                <label>Male</label>
+                <input type="radio" name="gender" value="M" />
+                <label>address</label>
+                <input type="text" name="address" id="address" />
+                <label>Height</label>
+                <input type="text" name="height" id="height" />
+                <label>Fill your interest</label>
+                <input type="text" name="interest" id="interest" />
+                <label>Is caste your preferance?</label>
+                <br>
+                <label>Yes</label>
+                <input type="radio" name="caste" value="yes" />
+                <label>No</label>
+                <input type="radio" name="caste" value="NO" />
+                <a href="C:\Users\HP\OneDrive\Desktop\anchal\matrimonial site\login_form.html">
+                    <input type="button" value="Submit" id="submit" onclick="validateform()" /></a>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
