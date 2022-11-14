@@ -1,0 +1,42 @@
+<%- include('header') -%>
+    <center>
+        <div>
+            <img src="https://img.freepik.com/free-photo/writing-down-plan_1098-15897.jpg?w=2000" height="400">
+            <h1>
+                SUYASH PRATAP
+            </h1>
+            <br>
+
+            <p>AGE - 30 Years</p><br>
+
+            <p>AGE - 30 Years</p><br>
+            <p>HEIGHT - 5'11" </p><br>
+            <p>RELIGION - HINDU, CASTE - THAKUR</p><br>
+            <p>EDUCATION - BSC CS(H)</p><br>
+            <p>OCCUPATION - SOFTWARE ENGINEER</p><br>
+            <p>LOCATION - LAS VEGAS</p><br>
+        </div>
+    </center>
+
+    <script>
+        var b1 = document.getElementById('like');
+        var b2 = document.getElementById('dislike');
+        var b = document.querySelector('body');
+
+        b1.addEventListener('click', function() {
+            change('green');
+
+        });
+
+        b2.addEventListener('click', function() {
+            change('red');
+        });
+
+        function change(c) {
+
+            b.style.background = c;
+
+        }
+    </script>
+
+    <%- include('footer') -%>
