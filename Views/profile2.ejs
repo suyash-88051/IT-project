@@ -1,0 +1,40 @@
+<%- include('header') -%>
+    <center>
+        <div>
+            <img src="https://www.freepik.com/free-photo/portrait-young-indian-top-manager-t-shirt-tie-crossed-arms-smiling-white-isolated-wall_18133472.htm#query=man&position=0&from_view=keyword" height="400">
+            <h1>
+                HARSH PRATAP
+            </h1>
+            <br>
+
+            <p>AGE - 26 Years</p><br>
+            <p>HEIGHT - 6' </p><br>
+            <p>RELIGION - HINDU, CASTE - THAKUR</p><br>
+            <p>EDUCATION - BTECH</p><br>
+            <p>OCCUPATION - SOFTWARE ENGINEER</p><br>
+            <p>LOCATION - CHICAGO</p><br>
+        </div>
+    </center>
+
+    <script>
+        var b1 = document.getElementById('like');
+        var b2 = document.getElementById('dislike');
+        var b = document.querySelector('body');
+
+        b1.addEventListener('click', function() {
+            change('green');
+
+        });
+
+        b2.addEventListener('click', function() {
+            change('red');
+        });
+
+        function change(c) {
+
+            b.style.background = c;
+
+        }
+    </script>
+
+    <%- include('footer') -%>
